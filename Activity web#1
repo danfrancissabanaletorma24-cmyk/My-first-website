@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<title> My personal Web page </title>
+</head>
+<body>
+<h1>Hi I am Dan Francis S. Etorma </h1>
+<h2> About Me! </h2>
+<p> Hello! I am Dan Francis Etorma and I love Web Development.</p>
+<p>I Love Coding, <br> I also enjoy watching Anime</p>
+<hr>
+<p>MY Name is <b>Dan Francis S. Etorma </b></p>
+<p> I enjoy <i> playing online games </i> in my free time</p>
+<ul>
+    <li> Valorant </li>
+    <li> Mobile Legends Bang Bang </li>
+    <li> Blood Strike </li>
+</ul>
+<p>I am a <u>web developer</u></p>
+</body>
+<ul>
+    <li> C++ </li>
+    <li> Python </li>
+    <li> HTML </li>
+</ul>
+<img src="IMG_20250810_132451.jpg" alt="My Photo" width="300">
+
+<a href="https://www.google.com"> Visit Google</a>
+<a href="danfrancisetorma@gmail."
