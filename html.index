@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My personal Web page</title>
+    <link
+      rel="icon"
+      type="jpg"
+      href="d06fcc84-c777-42ab-aa10-d2b5b8c015d6.jpg" />
+      <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+
+  <body>
+    <h1>Hi I am Dan Francis S. Etorma</h1>
+    <h2>About Me!</h2>
+    <p>Hello! I am Dan Francis Etorma and I love Web Development.</p>
+    <p>
+      I Love Coding, <br />
+      I also enjoy watching Anime
+    </p>
+    <hr />
+    <p>MY Name is <b>Dan Francis S. Etorma </b></p>
+    <p>I enjoy <i> playing online games </i> in my free time</p>
+    <ul>
+      <li>Valorant</li>
+      <li>Mobile Legends Bang Bang</li>
+      <li>Blood Strike</li>
+    </ul>
+    <p>I am a <u>web developer</u></p>
+  </body>
+  <ul>
+    <li>C++</li>
+    <li>Python</li>
+    <li>HTML</li>
+  </ul>
+  <img src="IMG_20250810_132451.jpg" alt="My Photo" width="300" />
+
+  <a href="https://www.google.com"> Visit Google</a>
+  <a href="mail to: danfrancisetorma@gmail."> Send me an Email </a>
+
+  <table border="1">
+    <tr>
+      <td>Name</td>
+      <td>Age</td>
+    </tr>
+    <tr>
+      <td>Dan Francis S. Etorma</td>
+      <td>19</td>
+    </tr>
+  </table>
+
+  <form>Name:<input type="text" name="fullname" /></form>
+  <form>password:<input type="password" name="pwd" /></form>
+
+  <form>
+    <button type="submit">submit</button>
+  </form>
+
+  <form>
+    <p>Gender:</p>
+    <input type="radio" name="gender" value="male" />Male<br />
+    <input type="radio" name="gender" value="female" />Female
+  </form>
+
+  <form>
+    <p>Hobbies:</p>
+    <input type="checkbox" name="hobby" value="Watching anime" />Watchig
+    anime<br />
+    <input type="checkbox" name="hobby" value="basketball" />Basketball<br />
+    <input type="checkbox" name="hobby" value="web dev" />Web Dev<br />
+  </form>
+
+  <form>
+    <label for="country">Select Country:</label>
+    <select id="country">
+      <option>Pelepenes</option>
+      <option>Japan</option>
+      <option>Switzerland</option>
+    </select>
+  </form>
+
+  <form>
+    <label for="message"> Message:</label><br />
+    <tesxtarea id="message" rows="4" cols="30"></tesxtarea>
+  </form>
+
+  <audio controls>
+    <source
+      src="Rico Blanco - Your Universe (LyricsLetra).mp3"
+      type="audio/mp3" />
+  </audio>
+
+  <video width="320" height="240" controls>
+    <source src="snaptik_7537301459537317127_v2.mp4" type="video/mp4" />
+  </video>
+
+  <iframe src="httsps://www.google.com" wodth="600" height="400"></iframe>
+
+  <iframe
+    wicth="500"
+    height="315"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  <p>x<sup>2</sup></p>
+  <p>This<strong> very important</strong>!</p>
+  <p>Please<em>read carefully</em>.</p>
+  <p><small>© 2025 My Website</small></p>
+
+  <blockquote>
+    "The Journey of a thousand miles begins with one step."
+  </blockquote>
+  <p>He said, <q>Hello World! </q></p>
+  <p>
+    <abbr title="HyperText Markup Language">HTML</abbr> Is the language of the
+    web.
+  </p>
+
+  <address>
+    Written By Dan Francis S. Etorma<br />
+    Visit us at www.mywebsite.com<br />
+    Albay, Philippines
+  </address>
+  <p>This is a <mark> Highlighted</mark> word.</p>
+  <p>Task Progess:</p>
+  <progress value="70" max="100"></progress>
+</html>
