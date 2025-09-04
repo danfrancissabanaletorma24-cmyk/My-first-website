@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remove a Class</title>
+  </head>
+  <style>
+    .highlight {
+      background-color: aquamarine;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <p id="demo" class="highlight">HALLOW PO!</p>
+    <script>
+      document.getElementById('btn').onclick = function () {
+        document.getElementById('demo').classList.remove('highlight');
+      };
+    </script>
+  </body>
+</html>
