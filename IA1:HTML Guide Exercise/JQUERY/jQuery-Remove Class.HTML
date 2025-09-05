@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remove a Class</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .highlight {
+        background-color: aquamarine;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo" class="highlight">MISS YOU:(</p>
+
+    <script>
+      $('#btn').click(function () {
+        $('#demo').removeClass('highlight');
+      });
+    </script>
+  </body>
+</html>
