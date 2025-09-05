@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #demo {
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo">Click me Daddey!</p>
+
+    <script>
+      $('#demo').click(function () {
+        $(this).text('STAWP!');
+      });
+    </script>
+  </body>
+</html>
