@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fade Out Element</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #box {
+        width: 500px;
+        height: 500px;
+        background: aquamarine;
+        opacity: 1;
+        transition: opacity 1s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box"></div>
+    <button id="btn">Fade Out</button>
+
+    <script>
+      $('#btn').click(function () {
+        $('#demo').prepend('Fade Out');
+      });
+    </script>
+  </body>
+</html>
