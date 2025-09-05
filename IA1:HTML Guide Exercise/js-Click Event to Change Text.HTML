@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Event to Change Text </title>
+    <style>
+      #demo {
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo">Click Me Daddey!</p>
+    <script>
+      document.getElementById('demo').onclick = function () {
+        this.innerText = 'STAWPP!';
+      };
+    </script>
+  </body>
+</html>
