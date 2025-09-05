@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slide Up</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #panel {
+        background-color: aquamarine;
+        max-height: 500px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panel">
+      <p>DON'T SLIDE ME UPP NOOO!!!!!!</p>
+    </div>
+    <button id="btn">Slide Up</button>
+
+    <script>
+      $('#btn').click(function () {
+        $('#panel').slideUp();
+      });
+    </script>
+  </body>
+</html>
