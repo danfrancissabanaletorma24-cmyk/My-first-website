@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Change Multiple CSS Properties </title>
+    <style>
+      #demo {
+        padding: 10px;
+        background: aquamarine;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo"> HELLOW POE!</p>
+    <button id="btn"> Change Css </button>
+    <script>
+      document.getElementById("btn").onclick = function() {
+        let el = document.getElementById("demo");
+        el.style.color = "white";
+        el.style.backgroundColor = "black";
+    };
+    </script>
+
+  </body>
+</html>
