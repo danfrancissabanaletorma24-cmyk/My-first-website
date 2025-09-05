@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouseover</title>
+    <style>
+      #demo {
+        color: black;
+        padding: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo">Hover me Pookie!</p>
+
+    <script>
+      document.getElementById('demo').onmouseover = function () {
+        this.style.color = 'Brown';
+      };
+    </script>
+  </body>
+</html>
