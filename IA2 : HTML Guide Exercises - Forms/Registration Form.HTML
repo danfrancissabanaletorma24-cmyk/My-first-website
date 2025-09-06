@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Login Form.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .error {
+        border: 2px solid red;
+      }
+      .warning {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Registration Form</h2>
+      <hr />
+
+      <form id="registrationForm">
+        <label for="username"> Username </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          required />
+
+        <label for="email"> Email </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required />
+
+        <label for="password"> Password </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required />
+
+        <label for="confirmPassword"> Confirm Password </label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+          required />
+        <div id="passwordWarning" class="warning" style="display: none">
+          ⚠ Passwords do not match
+        </div>
+
+        <hr />
+
+        <label> Gender: </label>
+        <div class="radio-group">
+          <label>
+            Male <input type="radio" name="gender" value="male" />
+          </label>
+          <label>
+            Female <input type="radio" name="gender" value="female" />
+          </label>
+        </div>
+
+        <hr />
+
+        <label> Interests </label>
+        <div class="checkbox-group">
+          <label>
+            Gaming <input type="checkbox" name="interests" value="Gaming" />
+          </label>
+          <label>
+            Watching Anime
+            <input type="checkbox" name="interests" value="Watching Anime" />
+          </label>
+          <label>
+            Music <input type="checkbox" name="interests" value="Music" />
+          </label>
+          <label>
+            Basketball
+            <input type="checkbox" name="interets value=Basketball" />
+          </label>
+        </div>
+
+        <hr />
+
+        <label for="bio"> Bio (Max 300 characters) </label>
+        <textarea id="bio" name="bio" rows="4" maxlength="300"></textarea>
+        <div id="bioCount">0/300 Characters</div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <script>
+        $(document).ready(function () {
+          $('#bio').on('input', function () {
+            const max = 300;
+            const currentLength = $(this).val().length;
+            $('#bioCount').text(`${currentLength} / ${max} characters`);
+          });
+
+          $('#registrationForm').submit(function (e) {
+            e.preventDefault();
+            $('input, textarea').removeClass('error');
+            $('#passwordWarning').hide();
+
+            let isValid = true;
+            let errorMessages = [];
+
+            if ($('#username').val().trim() === '') {
+              isValid = false;
+              $('#username').addClass('error');
+              errorMessages.push('⚠ Username is required.');
+            }
+
+            const emailVal = $('#email').val().trim();
+            if (emailVal === '') {
+              isValid = false;
+              $('#email').addClass('error');
+              errorMessages.push('⚠ Email is required.');
+            } else {
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailRegex.test(emailVal)) {
+                isValid = false;
+                $('#email').addClass('error');
+                errorMessages.push('⚠ Invalid email format.');
+              }
+            }
+
+            const passwordVal = $('#password').val();
+            const confirmVal = $('#confirmPassword').val();
+
+            if (passwordVal !== confirmVal) {
+              isValid = false;
+              $('#password, #confirmPassword').addClass('error');
+              $('#passwordWarning').show();
+            }
+
+            if (isValid) {
+              alert('✅ Registration successful!');
+            } else {
+              alert('❌ Please fix the errors in the form.');
+            }
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
